@@ -2,8 +2,9 @@ h1{
     align-items: center;
 }
 
-#container{
+#container div{
      display:grid;
      grid-template-columns: (26,1fr);
      grid-template-rows: auto;
+     margin:auto;
 }
