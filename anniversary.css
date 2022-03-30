@@ -41,3 +41,58 @@ h5{
 .p2{
     padding-top: 140px;
 }
+
+.product{
+    height:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap:10px;
+    padding:20px;
+}
+
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.item>img{
+    height: 400px;
+    width:400px;
+    border-radius: 50%;
+}
+.item>h1{
+    font-size: 25px;
+    line-height: 20px;
+    color:#333333;
+    margin-top: 20px;
+    font-family: "lato",sans-serif;
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+}
+.item>p{
+    font-family: "Lato-light,helvetica,Arial,sans-serif";
+    line-height: 20px;
+    color:#2e3337;
+    margin-top: -30px;
+    font-family: "lato",sans-serif;
+    font-family: "poppins",sans-serif;
+    font-weight: 300;
+    padding: 40px;
+}
+
+.item>button{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    height: 45px;
+    width:30%;
+    margin-top: -30px;
+}
+.item>button:hover{
+    background-color: rgb(188,228,228);
+    cursor: pointer;
+}
+
