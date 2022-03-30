@@ -1,0 +1,43 @@
+.container{
+    text-align: center;
+    position:relative;
+}
+.container>img{
+    width:100%;
+    margin-top: 40px;
+}
+.p1{
+    position: absolute;
+    top:20px;
+    left:16px;
+    text-align: center;
+    width:40%;
+    font-size: 250%;
+    font-family:Lato;
+    font-stretch: expanded;
+}
+button{
+    color:white;
+    background-color: #333333;
+    font-size: 15px;
+    border:0px;
+    padding:12px 9px;
+}
+button:hover{
+    background: #28bdb7;
+    color:rgb(15, 12, 12);
+}
+h5{
+    margin-top: 150px;
+    font-size: 40px;
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+}
+.heading>img{
+    margin-bottom: 100px;
+}
+.p2{
+    padding-top: 140px;
+}
