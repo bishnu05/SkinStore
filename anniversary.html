@@ -7,9 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="anniversary.css">
     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <img src="https://static.thcdn.com/images/xlarge/webp/widgets/121-us/52/0225-STDCRE-32155-SS-BME-Skinstore-March-Photography-2022_Part_2-_Lookbook-BATCHING-SHOT_14-1180x450-024552.jpg"/>
         <div class="p1">
             <h5>the anniversay</h5>
@@ -75,7 +78,93 @@
     </div>
     <h1 class="heading">DECORTE</h1>
     <img src="https://static.thcdn.com/images/medium/webp/widgets/121-us/23/0225-STDCRE-32155-SS-BME-Skinstore-March-Photography-2022_Part_2-_Lookbook-BATCHING-SHOT_04-600x600-043323.jpg" alt="">
+     -->
+
+      
+    <section class="product"> 
+        
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11291543-1414871574706341.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Obagi Medical Professional-C Serum 20% Strength</p>
+                     <button class="btn">Obagi Gift</button>
+                     <button class="rating"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMa6oxgoL--nNs29Y-eO2cTVKQMMIah1vJ1g&usqp=CAU" class="card-btn" alt=""></button>
+                    <span class="price">$136.99</span>
+                    <button class="btn1">QUICK BUY</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://static.thcdn.com/images/xsmall/webp//productimg/original/11291543-2074864291141689.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Obagi Medical Professional-C Serum 20% Strength</p>
+                     <button class="btn">Obagi Gift</button>
+                     <button class="rating"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMa6oxgoL--nNs29Y-eO2cTVKQMMIah1vJ1g&usqp=CAU" class="card-btn" alt=""></button>
+                    <span class="price">$136.99</span>
+                    <button class="btn1">QUICK BUY</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://static.thcdn.com/images/xsmall/webp//productimg/original/11291543-2074864291141689.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Obagi Medical Professional-C Serum 20% Strength</p>
+                     <button class="btn">Obagi Gift</button>
+                     <button class="rating"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMa6oxgoL--nNs29Y-eO2cTVKQMMIah1vJ1g&usqp=CAU" class="card-btn" alt=""></button>
+                    <span class="price">$136.99</span>
+                    <button class="btn1">QUICK BUY</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://static.thcdn.com/images/xsmall/webp//productimg/original/11291543-2074864291141689.jpg" class="product-thumb" alt="">
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Obagi Medical Professional-C Serum 20% Strength</p>
+                     <button class="btn">Obagi Gift</button>
+                     <button class="rating"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMa6oxgoL--nNs29Y-eO2cTVKQMMIah1vJ1g&usqp=CAU" class="card-btn" alt=""></button>
+                    <span class="price">$136.99</span>
+                    <button class="btn1">QUICK BUY</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
     
 
 </body>
+
+
+
+<script>
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+
+
+
+</script>
 </html>
